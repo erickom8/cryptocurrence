@@ -31,9 +31,9 @@ Sem suporte a múltiplos idiomas (inicialmente só em português).
 
 Tecnologias Utilizadas
 Frontend:
-Backend:
+Backend: Python
 Banco de Dados: Nenhum no MVP (dados vêm direto da API)  
-API: 
+API: Python
 Hospedagem: 
 
 ---
