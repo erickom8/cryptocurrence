@@ -6,7 +6,7 @@ from datetime import datetime
 # URL da página do Ethereum no CoinMarketCap
 url = "https://coinmarketcap.com/currencies/ethereum/"
 
-# Função para obter o preço
+# Função para obter o preço e salvar em CSV
 def obter_preco():
     try:
         response = requests.get(url, headers={"User-Agent": "Mozilla/5.0"})
@@ -21,6 +21,14 @@ def obter_preco():
         if span:
             preco = span.text.strip()
             horario = datetime.now().strftime("%H:%M:%S")
+            data = datetime.now().strftime("%Y-%m-%d")
+            
+            # Salvar dados em CSV
+            with open('ethereum_prices.csv', 'a') as f:
+                if f.tell() == 0:  # Se arquivo estiver vazio, escreve o cabeçalho
+                    f.write("Data,Hora,Preço\n")
+                f.write(f"{data},{horario},{preco}\n")
+            
             return f"Preço do Ethereum: {preco} (Atualizado em: {horario})"
         else:
             return "Não foi possível encontrar o preço."

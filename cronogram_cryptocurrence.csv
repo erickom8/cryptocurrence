@@ -1,18 +1,17 @@
-Tarefa,Responsável,Data de Início,Data de Término,Status
-Definição dos requisitos iniciais,Erick/Vinicius,12/03/2025,15/03/2025,Concluído
-Pesquisa e seleção de APIs de mercado,Erick/Vinicius,16/03/2025,20/03/2025,Em andamento
-Protótipo do sistema de monitoramento de preços,Erick,21/03/2025,27/03/2025,Pendente
-Desenvolvimento do backend para captura de preços,Vinicius,28/03/2025,07/04/2025,Pendente
-Implementação da automação para atualização de dados,Vinicius,08/04/2025,14/04/2025,Pendente
-Desenvolvimento do frontend da interface,Erick,15/04/2025,25/04/2025,Pendente
-Integração do frontend com o backend,Erick/Vinicius,26/04/2025,02/05/2025,Pendente
-Criação de logs e monitoramento de erros,Vinicius,03/05/2025,07/05/2025,Pendente
-Testes iniciais de funcionamento,Erick/Vinicius,08/05/2025,14/05/2025,Pendente
-Ajustes e otimizações no código,Vinicius,15/05/2025,21/05/2025,Pendente
-Implementação de banco de dados para histórico de preços,Erick,22/05/2025,28/05/2025,Pendente
-Segurança e proteção de dados,Vinicius,29/05/2025,04/06/2025,Pendente
-Hospedagem e configuração na nuvem,Erick,05/06/2025,10/06/2025,Pendente
-Testes finais de desempenho e escalabilidade,Erick/Vinicius,11/06/2025,18/06/2025,Pendente
-Ajustes finais e melhorias,Erick/Vinicius,19/06/2025,25/06/2025,Pendente
-Preparação para lançamento e divulgação,Erick,26/06/2025,30/06/2025,Pendente
-Lançamento oficial do projeto,Erick/Vinicius,01/07/2025,02/07/2025,Pendente
+Tarefa                                                  , Responsável   , Data de Início, Data de Término, Status
+Definição dos requisitos iniciais                       , Erick/Vinicius, 12/03/2025    , 15/03/2025     , Concluído
+Pesquisa e seleção de APIs de mercado                   , Erick/Vinicius, 16/03/2025    , 20/03/2025     , Em andamento
+Protótipo do sistema de monitoramento de preços         , Erick         , 21/03/2025    , 27/03/2025     , Em andamento
+Desenvolvimento do backend para captura de preços       , Erick         , 28/03/2025    , 07/04/2025     , Pendente
+Implementação da automação para atualização de dados    , Erick         , 08/04/2025    , 14/04/2025     , Pendente
+Desenvolvimento do frontend da interface                , Vinicius      , 15/04/2025    , 25/04/2025     , Pendente
+Integração do frontend com o backend                    , Erick/Vinicius, 26/04/2025    , 02/05/2025     , Pendente
+Criação de logs e monitoramento de erros                , Erick         , 03/05/2025    , 07/05/2025     , Pendente
+Testes iniciais de funcionamento                        , Vinicius      , 08/05/2025    , 14/05/2025     , Pendente
+Implementação de banco de dados para histórico de preços, Erick         , 22/05/2025    , 28/05/2025     , Pendente
+Segurança e proteção de dados                           , Vinicius      , 29/05/2025    , 04/06/2025     , Pendente
+Hospedagem e configuração na nuvem                      , Erick         , 05/06/2025    , 10/06/2025     , Pendente
+Testes finais de desempenho e escalabilidade            , Erick/Vinicius, 11/06/2025    , 18/06/2025     , Pendente
+Ajustes finais e melhorias                              , Erick/Vinicius, 19/06/2025    , 25/06/2025     , Pendente
+Preparação para lançamento e divulgação                 , Erick         , 26/06/2025    , 30/06/2025     , Pendente
+Lançamento oficial do projeto                           , Erick/Vinicius, 01/07/2025    , 02/07/2025     , Pendente
