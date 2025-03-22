@@ -1,0 +1,56 @@
+MVP do Cryptonight: O Que Faz e O Que Não Faz
+
+Monitoramento de preços de criptomoedas em tempo real
+- Exibe preços atualizados de 3 a 5 criptomoedas populares (ex: Bitcoin, Ethereum, Solana).  
+- Atualizações automáticas a cada 30 segundos - 1 minuto via API confiável (CoinMarketCap ou CoinGecko).  
+
+Interface Simples e Acessível
+- Web App Responsivo com design minimalista para visualizar preços.  
+- Interface intuitiva, com valores em tempo real e gráficos básicos.  
+- Permite filtrar criptomoedas monitoradas.  
+
+Automação & Backend 
+- Código em Python que consome API e exibe os dados na interface.  
+- Hospedagem gratuita ou de baixo custo (Heroku, Vercel ou AWS Free Tier).  
+- Atualização periódica dos preços sem intervenção manual.  
+
+Validação com Usuários
+- Disponibilizar uma versão beta para um grupo pequeno de entusiastas de criptomoedas.  
+- Coletar feedback para iterar e melhorar a usabilidade.  
+
+---
+
+O Que o MVP NÃO Faz (Fora do Escopo Inicial)
+Não terá login/cadastro de usuários (todos acessam anonimamente).  
+Sem carteira digital ou transações (apenas monitoramento de preços).  
+Sem previsão de preços ou análises complexas (apenas valores em tempo real).  
+Sem notificações push ou alertas personalizados (isso pode vir depois).  
+Sem suporte a múltiplos idiomas (inicialmente só em português).  
+
+---
+
+Tecnologias Utilizadas
+Frontend:
+Backend: Python
+Banco de Dados: Nenhum no MVP (dados vêm direto da API)  
+API: Python
+Hospedagem: 
+
+---
+
+Roadmap de Desenvolvimento
+Semana 1: Protótipo & Arquitetura
+- Criar wireframe e definir estrutura do sistema.  
+- Escolher API e fazer testes iniciais de consumo de dados.  
+
+Semana 2: Backend & Integração
+- Criar script em Python para buscar preços da API.  
+- Criar backend simples para servir os dados no frontend.  
+
+Semana 3: Frontend & Interface
+- Construir interface web responsiva para exibir preços.  
+- Implementar atualização automática dos dados.  
+
+Semana 4: Testes & Deploy
+- Testar o MVP com usuários reais e coletar feedback.  
+- Publicar no Heroku/Vercel para acesso público.  
