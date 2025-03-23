@@ -1,7 +1,6 @@
 from fastapi import FastAPI
 import requests
 from bs4 import BeautifulSoup
-import time
 from datetime import datetime
 
 app = FastAPI()
