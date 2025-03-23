@@ -2,6 +2,8 @@ from fastapi import FastAPI
 import requests
 from bs4 import BeautifulSoup
 from datetime import datetime
+import uvicorn
+import os
 
 app = FastAPI()
 
@@ -69,6 +71,9 @@ def get_price(selected_coin: str):
 #         f.write("Data,Hora,Preço\n")
 #     f.write(f"{data},{horario},{preco}\n")
 
+@app.get("/")
+async def root():
+    return {"message": "Welcome to the Cryptocurrency Price API", "available_coins": coins}
 
 # Route to get the price of the cryptocurrency
 @app.get("/price/{coin}")
@@ -76,3 +81,7 @@ def get_price(coin: str):
     if coin not in coins:
         return {"erro": "Moeda não suportada. Escolha entre: bitcoin, ethereum, bnb, dogecoin, xrp"}
     return get_price(coin)
+
+if __name__ == "__main__":
+    port = int(os.environ.get("PORT", 8000))
+    uvicorn.run(app, host="0.0.0.0", port=port)
