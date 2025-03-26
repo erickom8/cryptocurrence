@@ -1,11 +1,28 @@
-from fastapi import FastAPI
 import requests
 from bs4 import BeautifulSoup
 from datetime import datetime
+from fastapi import FastAPI
+from fastapi.staticfiles import StaticFiles
+from fastapi.responses import FileResponse
 import uvicorn
 import os
 
 app = FastAPI()
+
+app.mount("/static", StaticFiles(directory="../frontend/build/static"), name="static")
+
+@app.get("/")
+async def serve_root():
+    return FileResponse("../frontend/build/index.html")
+
+@app.get("/{full_path:path}")
+async def serve_react_app(full_path: str):
+    path = f"../frontend/build/{full_path}"
+    if os.path.exists(path):
+        return FileResponse(path)
+    else:
+        return FileResponse("../frontend/build/index.html")
+
 
 #Coins to get price data
 coins = [
