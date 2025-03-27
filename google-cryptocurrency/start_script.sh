@@ -10,6 +10,7 @@ npm run build
 # Retorna ao diretório raiz
 cd ..
 
-cd backend
 # Inicia o servidor Uvicorn
+cd backend
+echo "Rodando na porta: $PORT"
 uvicorn main:app --host 0.0.0.0 --port $PORT
